@@ -1,0 +1,103 @@
+:root {
+    --cor-barnca: #ffff;
+    --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.background__naruto {
+    background: url("img/Background-Naruto.png") no-repeat;
+    background-size: cover;
+}
+
+.background__sasuke {
+    background: url("img/Background-Sasuke.png") no-repeat;
+    background-size: cover;
+}
+
+.background__sakura {
+    background: url("img/Background-Sakura.png") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*## Area Comteudo do site ##*/
+
+.container__conteudo {
+    margin: 20% 0 0 4%;
+}
+
+.container__conteudo__logo {
+    width: 15%;
+}
+
+.container__conteudo__titulo {
+    font-family: var(--fonte-principal);
+    text-shadow: 4px 4px 4px black;
+    color: var(--cor-barnca);
+    font-size: 48px;
+    margin: 0.5em 0;
+}
+
+.container__conteudo__texto {
+    font-family: var(--fonte-principal);
+    text-shadow: 4px 4px 4px black;
+    color: var(--cor-barnca);
+    font-weight: 600;
+    font-size: 18px;
+    width: 25%;
+}
+
+/*## Area lista lateral ##*/
+
+.container__lista {
+    background: #4b4b4be7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.lista {
+    text-decoration: none;
+}
+
+.lista-item {
+    list-style: none;
+    padding: 1em;
+}
+
+.lista-item-img {
+    width: 140px;
+}
+
+@media screen and (max-width: 1440px){
+    .container__conteudo__titulo {
+        font-size: 40px;
+    }
+
+    .container__conteudo__texto {
+        font-size: 16px;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background__naruto {
+        background: url("img/1.png") no-repeat;
+        background-size: contain;
+    }
+
+    
+
+    .container__lista {
+        display: none;
+    }
+}
